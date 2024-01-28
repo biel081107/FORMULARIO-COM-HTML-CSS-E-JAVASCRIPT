@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #040D12;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    text-align: center;
+    background-color: #183D3D;
+    border-radius: 1rem;
+    width: 40%;
+    display: block ;
+}
+.header{
+    margin-bottom: 1rem;
+    background-color: #5C8374;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1rem 1rem 0 0;
+    font-size: 1.3rem;
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+}
+.conteudo form{
+    padding: 2rem;
+    width: 100%;
+}
+.conteudo form label{
+    font-size: 1.2rem;
+}
+.conteudo form input{
+    padding: 1rem 0.7rem;
+    width: 100%;
+    border-radius: 0.3rem;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    height: 5vh;
+    font-weight: 700;
+}
+.CONCLUIDO{
+    text-align: center;
+    background-color: #183D3D;
+    border-radius: 1rem;
+    font-size: 2rem;
+    width: 50%;
+    display: none ;
+}
+.CONCLUIDO p{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+} 
+.header-concluido{
+    background-color: #5C8374;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem 1rem 0 0;
+}
+#dica{
+    font-size: 0.7rem;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+#cadastra{
+    width: 100%;
+    height: 8vh;
+    font-size: 1.5rem;
+    border-radius: 0.4rem;
+    border: 1px solid black;
+    font-weight: 700;
+    color: white;
+    background-color: #5C8374
+}
+#emoji{
+    font-size: 3rem;
+}
+#cadastra:active{
+    color: #93B1A6
+}
+#cadastra:active, #cadastra:hover{
+    border: 1px solid white;
+    background-color: #040D12;
+}
+@media only screen  and (min-width:1050px){
+    .formulario{
+        width: 30%;
+    }
+}
+
+@media only screen  and (max-width: 900px) and (min-width:550px) {
+
+    .formulario{
+        width: 50%;
+    }
+    .CONCLUIDO{
+        font-size: 5vw;
+    }
+    .CONCLUIDO p{
+        text-align: center;
+        padding: 1rem;
+        font-size: 4vw;
+}
+}
+@media only screen  and (max-width: 550px) and (min-width:350px){
+    .formulario{
+        width: 80%;
+
+    }
+    .CONCLUIDO{
+        font-size: 5vw;
+    }
+    .CONCLUIDO p{
+        text-align: center;
+        padding: 1rem;
+        font-size: 4vw;
+    }
+
+}
+@media only screen and (max-width:350px){
+
+    .formulario{
+        width: 90%;
+        font-size: 1em;
+    }
+    .header{
+        font-size: 1em;
+    }
+    #cadastra{
+        font-size: 1em;
+    }
+    .CONCLUIDO{
+        font-size: 5vw;
+    }
+    .CONCLUIDO p{
+        text-align: center;
+        padding: 1rem;
+        font-size: 4vw;
+}
+}
+@media only screen and (max-width:350px){
+    .header{
+        padding: 1rem;
+    }
+}
