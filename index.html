@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+    <script src="https://kit.fontawesome.com/55400eb285.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body >
+    <div class="container" >
+        <div class="formulario">
+            <div class="header">
+                <header>
+                    <h1>CADASTRO</h1>
+                </header>
+            </div>
+            <div class="conteudo">
+                <form>
+                    <label for="fnome"><i class="fa-solid fa-user"></i> NOME : </label> <br><input type="text" name="fnome" id="fnome"  required><br>
+                    <label for="fsnome">SOBRENOME : </label><br> <input type="text" name="fsnome" id="fsnome" required><br>
+                    <label for="senha"><i class="fa-solid fa-lock"></i> SENHA : </label><br><input type="password" name="senha" id="senha" required placeholder="*********" onkeyup="alerta()"><br>
+                    <span class="dicas" id="alerta" ></span><br>
+                    <span id="dica" class="dicas"><i class="fa-solid fa-diamond"></i> A senha deve conter no minimo 6 caracteres!!</span><br>
+                    
+                    <label for="csenha">CONFIRMAR SENHA : </label><br> <input type="password" name="csenha" id="csenha" required placeholder="*********" onkeyup="confirmasenha()">
+                    <span class="dicas" id="alerta2"></span>
+                    <div class="btn">
+                        <button type="button" id="cadastra" onclick="cadastrar()">CADASTRAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="CONCLUIDO">
+            <div class="header-concluido">
+                <h2>CADASTRO CONCLUIDO COM SUCESSO</h2>
+            </div>
+            <p>Seu Cadastro foi efetuado com sucesso!! <br> Muito Obrigado</p>
+            <p id="emoji">&#x1F604</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
